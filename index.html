@@ -10,11 +10,6 @@
   <meta name="description" content="ערכת עבודה קצרה עם 30 פרומפטים פרקטיים לארגונים שרוצים להתחיל לעבוד נכון עם AI. ניהול, שיווק, שירות, תפעול, HR, מחקר וקבלת החלטות." />
   <meta name="author" content="מרכז חדשנות כנרת" />
   <meta name="keywords" content="AI לארגונים, פרומפטים, בינה מלאכותית, הכשרות AI, הטמעת AI, מרכז חדשנות כנרת" />
-      <link rel="icon" sizes="192x192" href="https://static.wixstatic.com/media/4aa83a_c980b3e5e7894bfb9b7e8db66b3aea30%7Emv2.png/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/4aa83a_c980b3e5e7894bfb9b7e8db66b3aea30%7Emv2.png" type="image/png"/>
-  <link rel="shortcut icon" href="https://static.wixstatic.com/media/4aa83a_c980b3e5e7894bfb9b7e8db66b3aea30%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/4aa83a_c980b3e5e7894bfb9b7e8db66b3aea30%7Emv2.png" type="image/png"/>
-  <link rel="apple-touch-icon" href="https://static.wixstatic.com/media/4aa83a_c980b3e5e7894bfb9b7e8db66b3aea30%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/4aa83a_c980b3e5e7894bfb9b7e8db66b3aea30%7Emv2.png" type="image/png"/>
-    
-
   <link rel="canonical" href="https://kicagrotech.github.io/KIC-AI/ai-prompts/" />
   <meta property="og:title" content="30 פרומפטים פרקטיים לארגונים שרוצים להתחיל לעבוד נכון עם AI" />
   <meta property="og:description" content="ערכת עבודה שימושית למנהלים, צוותים ועובדים שרוצים להפיק ערך אמיתי מכלי AI." />
@@ -34,6 +29,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="icon" sizes="192x192" href="https://static.wixstatic.com/media/4aa83a_c980b3e5e7894bfb9b7e8db66b3aea30%7Emv2.png/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/4aa83a_c980b3e5e7894bfb9b7e8db66b3aea30%7Emv2.png" type="image/png"/>
+  <link rel="shortcut icon" href="https://static.wixstatic.com/media/4aa83a_c980b3e5e7894bfb9b7e8db66b3aea30%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/4aa83a_c980b3e5e7894bfb9b7e8db66b3aea30%7Emv2.png" type="image/png"/>
+  <link rel="apple-touch-icon" href="https://static.wixstatic.com/media/4aa83a_c980b3e5e7894bfb9b7e8db66b3aea30%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/4aa83a_c980b3e5e7894bfb9b7e8db66b3aea30%7Emv2.png" type="image/png"/>
+    
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -446,11 +445,13 @@
     .hero {
       position: relative;
       overflow: hidden;
-      padding: 86px 0 70px;
+      isolation: isolate;
+      padding: 116px 0 104px;
+      color: var(--white);
       background:
-        radial-gradient(circle at 12% 14%, rgba(20, 184, 166, 0.24), transparent 28%),
-        radial-gradient(circle at 88% 10%, rgba(34, 199, 216, 0.22), transparent 30%),
-        linear-gradient(180deg, #f8fbfd 0%, #eef6f8 100%);
+        linear-gradient(90deg, rgba(5, 24, 46, 0.94) 0%, rgba(5, 24, 46, 0.82) 48%, rgba(5, 24, 46, 0.42) 100%),
+        linear-gradient(180deg, rgba(5, 24, 46, 0.08), rgba(5, 24, 46, 0.22)),
+        var(--hero-image) center / cover no-repeat;
     }
 
     .hero:before {
@@ -458,34 +459,51 @@
       position: absolute;
       inset: 0;
       background-image:
-        linear-gradient(rgba(20, 184, 166, 0.06) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(20, 184, 166, 0.06) 1px, transparent 1px);
+        linear-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.07) 1px, transparent 1px);
       background-size: 34px 34px;
-      mask-image: linear-gradient(to bottom, rgba(0,0,0,0.95), rgba(0,0,0,0.25));
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,0.88), rgba(0,0,0,0.22));
       pointer-events: none;
+      z-index: -1;
+    }
+
+    .hero:after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0 0;
+      height: 120px;
+      background: linear-gradient(180deg, rgba(246, 248, 251, 0), var(--bg));
+      pointer-events: none;
+      z-index: -1;
     }
 
     .hero-grid {
       position: relative;
       z-index: 2;
       display: grid;
-      grid-template-columns: 1.05fr 0.95fr;
-      gap: 44px;
+      grid-template-columns: minmax(0, 860px);
+      gap: 28px;
       align-items: center;
+      min-height: 540px;
+    }
+
+    .hero-copy {
+      max-width: 860px;
     }
 
     .eyebrow {
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      color: var(--blue);
-      background: rgba(255, 255, 255, 0.78);
-      border: 1px solid rgba(20, 184, 166, 0.30);
+      color: var(--white);
+      background: rgba(255, 255, 255, 0.16);
+      border: 1px solid rgba(255, 255, 255, 0.26);
       border-radius: 999px;
       padding: 8px 14px;
       font-size: 0.92rem;
       font-weight: 800;
-      box-shadow: 0 10px 25px rgba(11, 31, 59, 0.06);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+      backdrop-filter: blur(10px);
       margin-bottom: 22px;
     }
 
@@ -493,8 +511,8 @@
       width: 10px;
       height: 10px;
       border-radius: 50%;
-      background: linear-gradient(135deg, var(--teal), var(--green));
-      box-shadow: 0 0 0 7px rgba(20, 184, 166, 0.12);
+      background: linear-gradient(135deg, #7dd3fc, #5eead4);
+      box-shadow: 0 0 0 7px rgba(94, 234, 212, 0.18);
     }
 
     h1 {
@@ -513,12 +531,25 @@
       color: transparent;
     }
 
+    .hero h1 {
+      color: var(--white);
+      text-shadow: 0 18px 42px rgba(0, 0, 0, 0.34);
+    }
+
+    .hero .gradient-text {
+      background: none;
+      -webkit-background-clip: initial;
+      background-clip: initial;
+      color: #5eead4;
+    }
+
     .hero-subtitle {
-      max-width: 720px;
+      max-width: 760px;
       margin: 0 0 30px;
-      color: #415064;
+      color: rgba(255, 255, 255, 0.9);
       font-size: clamp(1.08rem, 1.45vw, 1.32rem);
       line-height: 1.75;
+      text-shadow: 0 10px 28px rgba(0, 0, 0, 0.28);
     }
 
     .hero-actions {
@@ -532,26 +563,27 @@
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 12px;
-      max-width: 720px;
+      max-width: 760px;
     }
 
     .metric {
-      background: rgba(255, 255, 255, 0.68);
-      border: 1px solid rgba(223, 231, 239, 0.88);
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.24);
       border-radius: 18px;
       padding: 15px 16px;
-      box-shadow: var(--shadow-soft);
+      box-shadow: 0 14px 35px rgba(0, 0, 0, 0.14);
+      backdrop-filter: blur(10px);
     }
 
     .metric strong {
       display: block;
-      color: var(--navy);
+      color: var(--white);
       font-size: 1.45rem;
       line-height: 1.1;
     }
 
     .metric span {
-      color: var(--muted);
+      color: rgba(255, 255, 255, 0.84);
       font-weight: 600;
       font-size: 0.9rem;
     }
@@ -1098,7 +1130,8 @@
       .kit-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
       .prompts-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .nav-links { display: none; }
-      .hero-image { min-height: 360px; }
+      .hero { background-position: center; }
+      .hero-grid { min-height: 480px; }
     }
 
     @media (max-width: 720px) {
@@ -1108,7 +1141,13 @@
       .brand-text { display: none; }
       .nav-actions { flex-direction: column; align-items: stretch; }
       .nav-actions .btn-outline { display: none; }
-      .hero { padding: 50px 0 44px; }
+      .hero {
+        padding: 72px 0 62px;
+        background:
+          linear-gradient(180deg, rgba(5, 24, 46, 0.94) 0%, rgba(5, 24, 46, 0.78) 58%, rgba(5, 24, 46, 0.68) 100%),
+          var(--hero-image) center / cover no-repeat;
+      }
+      .hero-grid { min-height: auto; }
       .hero-actions { flex-direction: column; }
       .hero-actions .btn { width: 100%; }
       .hero-metrics,
@@ -1131,7 +1170,6 @@
     <div class="container nav">
       <a href="#top" class="brand" aria-label="מרכז חדשנות כנרת">
         <img src="https://static.wixstatic.com/media/4aa83a_8834f96f383f4ae0b877d496085d8053~mv2.png" alt="לוגו מרכז חדשנות כנרת" />
-        <span class="brand-text">מרכז חדשנות כנרת<br />GenAI לארגונים</span>
       </a>
       <nav class="nav-links" aria-label="ניווט ראשי">
         <a href="#intro">למה זה חשוב</a>
@@ -1149,6 +1187,7 @@
 
   <main id="main" tabindex="-1">
     <section class="hero" id="top" aria-labelledby="hero-title">
+      <span class="visually-hidden">תמונת רקע: בית המדע ומרכז חדשנות כנרת בצמח.</span>
       <div class="container hero-grid">
         <div class="hero-copy">
           <div class="eyebrow"><span class="dot"></span> ערכת עבודה פרקטית לשימוש נכון ב-AI</div>
@@ -1162,17 +1201,6 @@
             <div class="metric"><strong>30</strong><span>פרומפטים מוכנים לעבודה</span></div>
             <div class="metric"><strong>6</strong><span>תחומי פעילות בארגון</span></div>
             <div class="metric"><strong>1</strong><span>צעד ראשון להטמעה נכונה</span></div>
-          </div>
-        </div>
-        <div class="hero-visual">
-          <div class="image-frame">
-            <div class="hero-image">
-              <img class="hero-photo" src="https://static.wixstatic.com/media/9ace1b_b3d7a48712a54d7ca70075e18f37a41b~mv2.jpeg/v1/fill/w_479%2Ch_330%2Cal_c%2Cq_80%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/9ace1b_b3d7a48712a54d7ca70075e18f37a41b~mv2.jpeg" alt="בית המדע ומרכז חדשנות כנרת בצמח" loading="eager" decoding="async" fetchpriority="high" />
-              <div class="image-badge">
-                <strong>מרכז חדשנות כנרת</strong>
-                <span>הכשרות, ליווי והטמעת AI באופן פרקטי, בטוח ומותאם לצורך הארגוני.</span>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -1611,7 +1639,6 @@
     <div class="container footer-grid">
       <div class="footer-logo">
         <img src="assets/kic-logo.png" alt="לוגו מרכז חדשנות כנרת" />
-        <span>מרכז חדשנות כנרת | GenAI לארגונים</span>
       </div>
       <div><a href="#accessibility">הצהרת נגישות</a> · שימוש פרקטי, בטוח ומותאם לצורך הארגוני.</div>
     </div>
